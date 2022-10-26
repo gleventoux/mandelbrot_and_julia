@@ -1,1 +1,3 @@
 __pycache__/
+build/
+mandelbrot_and_julia.egg-info/

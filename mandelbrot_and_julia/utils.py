@@ -1,6 +1,7 @@
 from PIL import Image
 import numpy as np
 
+
 def suite(z,c)-> complex:
     """Générateur des éléments de la suite $z_{n+1}=z_n^2+c$
     
@@ -113,7 +114,7 @@ def plot_mandelbrot(zmin=-2-1j, zmax=1+1j, pixel_size=1e-2, max_iter=20, figname
                 if is_in_mandelbrot(c,max_iter=max_iter):
                     a[i][j] = False
         im = Image.fromarray(a)
-        im.save("output"+figname)
+        im.save('output/'+figname)
 
 def plot_julia(c=0.8+0.156j, zmin=-1-1j, zmax=1+1j, pixel_size=1e-2, max_iter=20, figname="Julia.png"):
     
@@ -154,4 +155,6 @@ def plot_julia(c=0.8+0.156j, zmin=-1-1j, zmax=1+1j, pixel_size=1e-2, max_iter=20
                 if is_in_julia(z,c,max_iter=max_iter):
                     a[i][j] = False
         im = Image.fromarray(a)
-        im.save(figname)
+
+        # set save file's path
+        im.save('output/'+figname)
