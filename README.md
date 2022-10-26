@@ -56,4 +56,16 @@ JuliaPlot [-c candidate] [--zmin zmin] [--zmax zmax] [--pixel_size pixel_size] [
 Pour plus d'informations sur les méthodes présentées, consulter la documentation générée automatiquement par [sphinx](https://www.sphinx-doc.org/en/master/).
 Pour cela, ouvrir le fichier `doc/build/html/index.html` avec votre naviguateur.
 
+## Résultats
+
+<figure>
+  <img src="img/Mandelbrot.png" alt="drawing" width="500"/>
+  <figcaption>Ensemble de Mandelbrot</figcaption>
+</figure>
+
+<figure>
+  <img src="img/Julia.png" alt="drawing" width="500"/>
+  <figcaption>Ensemble de Julia pour c=-0.8+0.156j</figcaption>
+</figure>
+
 
