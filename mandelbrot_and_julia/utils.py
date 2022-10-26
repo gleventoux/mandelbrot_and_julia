@@ -62,8 +62,6 @@ def is_in_julia(z0,c,max_iter=50):
         The given parameter for the Julia sequence
     max_iter : int, optional
         The number of terms of the Mandelbrot sequence to assume this one is bounded
-    threshold : float, optional
-        Radius of the disk within which computed terms must all be to consider the Mandelbrot sequence as bounded
 
     Returns
     -------

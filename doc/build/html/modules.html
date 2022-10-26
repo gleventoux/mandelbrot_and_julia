@@ -1,10 +1,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>mandelbrot_and_julia &#8212; mandelbrot_and_julia 0.1 documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
@@ -13,7 +13,9 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -46,12 +48,29 @@
           <div class="body" role="main">
             
   <section id="mandelbrot-and-julia">
-<h1>mandelbrot_and_julia<a class="headerlink" href="#mandelbrot-and-julia" title="Permalink to this headline">¶</a></h1>
+<h1>mandelbrot_and_julia<a class="headerlink" href="#mandelbrot-and-julia" title="Permalink to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="mandelbrot_and_julia.html">mandelbrot_and_julia package</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="mandelbrot_and_julia.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="mandelbrot_and_julia.html#module-mandelbrot_and_julia.utils">mandelbrot_and_julia.utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mandelbrot_and_julia.html#module-mandelbrot_and_julia.JuliaPlot">mandelbrot_and_julia.JuliaPlot module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mandelbrot_and_julia.html#mandelbrot_and_julia.JuliaPlot.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mandelbrot_and_julia.html#module-mandelbrot_and_julia.MandelbrotPlot">mandelbrot_and_julia.MandelbrotPlot module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mandelbrot_and_julia.html#mandelbrot_and_julia.MandelbrotPlot.main"><code class="docutils literal notranslate"><span class="pre">main()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="mandelbrot_and_julia.html#module-mandelbrot_and_julia.utils">mandelbrot_and_julia.utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="mandelbrot_and_julia.html#mandelbrot_and_julia.utils.is_in_julia"><code class="docutils literal notranslate"><span class="pre">is_in_julia()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mandelbrot_and_julia.html#mandelbrot_and_julia.utils.is_in_mandelbrot"><code class="docutils literal notranslate"><span class="pre">is_in_mandelbrot()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mandelbrot_and_julia.html#mandelbrot_and_julia.utils.plot_julia"><code class="docutils literal notranslate"><span class="pre">plot_julia()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mandelbrot_and_julia.html#mandelbrot_and_julia.utils.plot_mandelbrot"><code class="docutils literal notranslate"><span class="pre">plot_mandelbrot()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mandelbrot_and_julia.html#mandelbrot_and_julia.utils.suite"><code class="docutils literal notranslate"><span class="pre">suite()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mandelbrot_and_julia.html#mandelbrot_and_julia.utils.suite_julia"><code class="docutils literal notranslate"><span class="pre">suite_julia()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="mandelbrot_and_julia.html#mandelbrot_and_julia.utils.suite_mandelbrot"><code class="docutils literal notranslate"><span class="pre">suite_mandelbrot()</span></code></a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="mandelbrot_and_julia.html#module-mandelbrot_and_julia">Module contents</a></li>
 </ul>
 </li>
@@ -92,7 +111,7 @@
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -118,7 +137,7 @@
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2022, Grégory Leventoux.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
     </div>
   </body>
 </html>
