@@ -1,0 +1,59 @@
+# mandelbrot_and_julia
+
+Ce package python fournit des utilitaires pour tracer les ensembles de Mandelbrot et de Julia et vérifier expérimentalement l'appartenance de points à ces ensembles.
+
+## Installation
+
+Cloner le repo et l'installer avec pip.
+
+```
+git clone 
+cd mandelbrot_and_julia
+pip install .
+```
+
+## Dépendances
+
+Le projet dépend des packages suivant:
+- Numpy
+- Pillow
+- Pytest
+
+Celles-ci sont installées automatiquement avec pip.
+
+## Tutoriel
+Pour utiliser l'utilitaire dans un script python, commencer par importer le module `utils.py`.
+
+```
+from mandelbrot_and_julia import utils
+```
+
+- `is_in_mandelbrot`: Vérifie l'appartenence d'un point à l'ensemble de Mandelbrot. La condition d'appartenance étant que la suite généré par ce point est bornnée,
+on ne calcul qu'un nombre limité de termes (paramètre optionnel **max_iter**) et on regarde si ils sont tous à l'intérieur d'un disque de rayon **threshold** (paramètre optionnel)
+
+- `is_in_julia` : Vérifie l'appartenance d'un point à l'ensenble de julia. Le procédé est quasiment identique au cas précédent. En revanche, l'argument **c** est ajouté pour définir l'ensenble
+de Julia en question et le rayon du disque de contrôle est fixé à 2.
+
+- `plot_mandelbrot`: Trace l'ensemble de Mandelbrot puis sauvegarde l'image dans le dossier `output` sous le nom donnée par l'utilisateur avec extension via l'argument optionnel **figname**.
+L'utilisateur peut choisier la fenêtre de tracer via les arguments optionnels **zmin** et **zmax** qui sont respectivement les coins bas-gauche et haut-droit de celle-ci.
+
+- `plot_julia`: Trace l'ensemble de Julia pour un complexe **c** donné selon le même procédé.
+
+
+## CLI
+
+Deux cli ont été implementées pour permettre le tracer des fractales directement depuis le terminal.
+
+```
+MandelbrotPlot [--zmin zmin] [--zmax zmax] [--pixel_size pixel_size] [--max_iter max_iter] [-o figname]
+```
+```
+JuliaPlot [-c candidate] [--zmin zmin] [--zmax zmax] [--pixel_size pixel_size] [--max_iter max_iter] [-o figname]
+```
+
+## Documentation
+
+Pour plus d'informations sur les méthodes présentées, consulter la documentation générée automatiquement par [sphinx](https://www.sphinx-doc.org/en/master/).
+Pour cela, ouvrir le fichier `doc/build/html/index.html` avec votre naviguateur.
+
+
