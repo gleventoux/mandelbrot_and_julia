@@ -7,19 +7,17 @@ Ce package python fournit des utilitaires pour tracer les ensembles de Mandelbro
 Cloner le repo et l'installer avec pip.
 
 ```
-git clone 
+git clone https://github.com/gleventoux/mandelbrot_and_julia.git
 cd mandelbrot_and_julia
 pip install .
 ```
 
 ## Dépendances
 
-Le projet dépend des packages suivant:
-- Numpy
-- Pillow
-- Pytest
-
-Celles-ci sont installées automatiquement avec pip.
+Le projet dépend des bliothèques suivantes qui sont automatiquement installées lors de l'installation du package.
+- [Numpy](https://numpy.org/)
+- [Pillow](https://pillow.readthedocs.io/en/stable/)
+- [Pytest](https://docs.pytest.org/en/7.2.x/)
 
 ## Tutoriel
 Pour utiliser l'utilitaire dans un script python, commencer par importer le module `utils.py`.
@@ -28,14 +26,16 @@ Pour utiliser l'utilitaire dans un script python, commencer par importer le modu
 from mandelbrot_and_julia import utils
 ```
 
-- `is_in_mandelbrot`: Vérifie l'appartenence d'un point à l'ensemble de Mandelbrot. La condition d'appartenance étant que la suite généré par ce point est bornnée,
-on ne calcul qu'un nombre limité de termes (paramètre optionnel **max_iter**) et on regarde si ils sont tous à l'intérieur d'un disque de rayon **threshold** (paramètre optionnel)
+Les quatre méthodes disponibles sont:
+
+- `is_in_mandelbrot`: Vérifie l'appartenence d'un point à l'ensemble de Mandelbrot. La condition d'appartenance étant que la suite générée par ce point est bornnée,
+on ne calcul qu'un nombre limité de termes (paramètre optionnel **max_iter**) et on regarde si ils sont tous à l'intérieur du disque centré sur l'origine de rayon **threshold** (paramètre optionnel)
 
 - `is_in_julia` : Vérifie l'appartenance d'un point à l'ensenble de julia. Le procédé est quasiment identique au cas précédent. En revanche, l'argument **c** est ajouté pour définir l'ensenble
 de Julia en question et le rayon du disque de contrôle est fixé à 2.
 
-- `plot_mandelbrot`: Trace l'ensemble de Mandelbrot puis sauvegarde l'image dans le dossier `output` sous le nom donnée par l'utilisateur avec extension via l'argument optionnel **figname**.
-L'utilisateur peut choisier la fenêtre de tracer via les arguments optionnels **zmin** et **zmax** qui sont respectivement les coins bas-gauche et haut-droit de celle-ci.
+- `plot_mandelbrot`: Trace l'ensemble de Mandelbrot puis sauvegarde l'image dans le dossier `output` sous le nom donné par l'utilisateur comprenant l'extension via l'argument optionnel **figname**.
+L'utilisateur peut aussi choisir la fenêtre de visualisation via les arguments optionnels **zmin** et **zmax** qui sont respectivement les coins bas-gauche et haut-droit de cette dernière.
 
 - `plot_julia`: Trace l'ensemble de Julia pour un complexe **c** donné selon le même procédé.
 
