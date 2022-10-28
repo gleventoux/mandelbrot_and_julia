@@ -1,4 +1,3 @@
-from pickle import FALSE
 from mandelbrot_and_julia import utils
 
 
