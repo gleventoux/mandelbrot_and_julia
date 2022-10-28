@@ -58,14 +58,19 @@ Pour cela, ouvrir le fichier `doc/build/html/index.html` avec votre naviguateur.
 
 ## Résultats
 
+Vous trouverez dans cette section quelques images obtenues avec notre programme.
+
+<div align=center>
+  
 <figure>
   <img src="img/Mandelbrot.png" alt="drawing" width="500"/>
-  <figcaption>Ensemble de Mandelbrot</figcaption>
 </figure>
+<p>Fig.1 - Ensemble de Mandelbrot</p>
+  
+</div>
+  
 
-<figure>
-  <img src="img/Julia.png" alt="drawing" width="500"/>
-  <figcaption>Ensemble de Julia pour c=-0.8+0.156j</figcaption>
-</figure>
+
+
 
 
