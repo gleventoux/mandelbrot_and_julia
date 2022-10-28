@@ -29,10 +29,10 @@ from mandelbrot_and_julia import utils
 Les quatre méthodes disponibles sont:
 
 - `is_in_mandelbrot`: Vérifie l'appartenence d'un point à l'ensemble de Mandelbrot. La condition d'appartenance étant que la suite générée par ce point est bornnée,
-on ne calcul qu'un nombre limité de termes (paramètre optionnel **max_iter**) et on regarde si ils sont tous à l'intérieur du disque centré sur l'origine de rayon **threshold** (paramètre optionnel)
+on ne calcul qu'un nombre limité de termes (paramètre optionnel **max_iter**) et on regarde si ils sont tous à l'intérieur du disque centré sur l'origine et de rayon 2. 
 
 - `is_in_julia` : Vérifie l'appartenance d'un point à l'ensenble de julia. Le procédé est quasiment identique au cas précédent. En revanche, l'argument **c** est ajouté pour définir l'ensenble
-de Julia en question et le rayon du disque de contrôle est fixé à 2.
+de Julia en question.
 
 - `plot_mandelbrot`: Trace l'ensemble de Mandelbrot puis sauvegarde l'image dans le dossier `output` sous le nom donné par l'utilisateur comprenant l'extension via l'argument optionnel **figname**.
 L'utilisateur peut aussi choisir la fenêtre de visualisation via les arguments optionnels **zmin** et **zmax** qui sont respectivement les coins bas-gauche et haut-droit de cette dernière.
@@ -63,9 +63,19 @@ Vous trouverez dans cette section quelques images obtenues avec notre programme.
 <div align=center>
   
 <figure>
-  <img src="img/Mandelbrot.png" alt="drawing" width="500"/>
+  <img src="img/mandelbrot.png" alt="drawing" width="500"/>
 </figure>
 <p>Fig.1 - Ensemble de Mandelbrot</p>
+  
+<figure>
+  <img src="img/mandelbrot_tentacle.png" alt="drawing" width="300"/>
+</figure>
+<p>Fig.2 - Tentacule de Mandelbrot</p>
+  
+<figure>
+  <img src="img/julia.png" alt="drawing" width="500"/>
+</figure>
+<p>Fig.3 - Ensemble de Julia pour c = -0.8 + 0.156j</p>
   
 </div>
   
