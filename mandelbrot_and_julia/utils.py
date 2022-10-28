@@ -19,7 +19,7 @@ def suite_julia(z,c)-> bool:
 
     return suite(z,c)
 
-def is_in_mandelbrot(c,max_iter=50,threshold=1000):
+def is_in_mandelbrot(c,max_iter=50):
 
     """
     Verify experimentally if the given complex candidate belongs to the Mandelbrot set.
@@ -30,8 +30,6 @@ def is_in_mandelbrot(c,max_iter=50,threshold=1000):
         The candidate
     max_iter : int, optional
         The number of terms of the Mandelbrot sequence to assume this one is bounded
-    threshold : float, optional
-        Radius of the disk within which computed terms must all be to consider the Mandelbrot sequence as bounded
 
     Returns
     -------
@@ -45,7 +43,7 @@ def is_in_mandelbrot(c,max_iter=50,threshold=1000):
     else:
         s = suite_mandelbrot(c)
         for _ in range(max_iter):
-            if abs(next(s)) >= threshold:
+            if abs(next(s)) >= 2:
                 return False
         return True
     
