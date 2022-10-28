@@ -108,7 +108,7 @@ def plot_mandelbrot(zmin=-2-1j, zmax=1+1j, pixel_size=1e-2, max_iter=20, figname
         im = Image.fromarray(np.invert(grid))
         im.save('output/'+figname)
 
-def plot_julia(c=0.8+0.156j, zmin=-1-1j, zmax=1+1j, pixel_size=1e-2, max_iter=20, figname="Julia.png"):
+def plot_julia(c=-0.8+0.156j, zmin=-1-1j, zmax=1+1j, pixel_size=1e-2, max_iter=20, figname="Julia.png"):
     
     """
     Plot and save the Julia set for a given c.
